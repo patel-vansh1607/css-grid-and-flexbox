@@ -12,7 +12,7 @@ body {
 
 .main-con {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* will show 3 grids in one line */
     gap: 20px; 
     padding: 20px;
     background-color: #2e2e40;
@@ -46,6 +46,8 @@ body {
     width: 200px;
     height: auto;
 } 
+
+/* hover effect on all divs */
 .main-con .grid1:hover{
     transform: scale(1.1); 
 }
@@ -65,17 +67,17 @@ body {
     transform: scale(1.1);
 }
 
-
+/* responsiveness  */
 @media (max-width: 768px) {
     .main-con {
-        grid-template-columns: repeat(2, 1fr); 
+         grid-template-columns: repeat(2, 1fr);  /* makes the grid to display 2 columns when width is 768 */
         gap: 15px;
     }
 }
 
 @media (max-width: 480px) {
     .main-con {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr; /* makes the grid to display 1 column1 when width is 480 */
         gap: 15px;
     }
 }
